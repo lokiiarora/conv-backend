@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "target": "es6",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "app/*": ["src/client/app/*"],
+      "app": ["src/server/app"],
+      "models/*": ["src/server/models/*"]
+    },
+    "typeRoots": ["node_modules/@types", "./typings"],
+    "types": [
+      "bluebird",
+      "node",
+      "mongoose",
+      "express"
+    ]
+  },
+  "include": [
+    "src/**/*",
+  ],
+  "exclude": [
+    "./node_modules/*"
+  ],
+  "compileOnSave": true
+}
